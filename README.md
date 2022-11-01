@@ -22,5 +22,6 @@
   - `.HAND_CONNECTIONS`
   
 # notes for myself
-- when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
-- ![image for connections between index and fingers](https://mediapipe.dev/images/mobile/hand_landmarks.png)
+  - when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
+
+  - ![image](https://mediapipe.dev/images/mobile/hand_landmarks.png)
