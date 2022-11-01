@@ -13,6 +13,8 @@
   - `waitKey()`
   - `destroyAllwindows()`
   - `cvtColor()` to convert an image from one color space to another, in this project it's converting BGR to RGB
+  - `.circle()`
+  - `.FILLED`
 ## for mediapipe library(python solution API):
   - `.hands`
   - `.Hands()`
@@ -20,6 +22,8 @@
   - `.drawing_utils`
   - `.draw_landmarks`
   - `.HAND_CONNECTIONS`
+  - `.shape`
+  - `.landmark`
   
 # notes for myself
   - when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
