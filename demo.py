@@ -2,6 +2,8 @@ from turtle import width
 import cv2
 import mediapipe as mp
 import math
+import numpy as np
+import osascript
 
 
 mp_hands = mp.solutions.hands
@@ -37,12 +39,10 @@ while True:
                     #finding the distance
                     distance = math.sqrt((index_pixel_x - thumb_pixel_x) ** 2 + (index_pixel_y - thumb_pixel_y) ** 2)
                     print(distance)
-
-
-
-
-
-
+                    #mapping distance to volume
+                    v = np.interp(distance,[35,350],[0,100])
+                    vol = "set volume output volume " + str(v)
+                    osascript.osascript(vol)
 
             draw.draw_landmarks(image, handlandmarks,mp_hands.HAND_CONNECTIONS) 
     cv2.imshow('Image capture', image)
