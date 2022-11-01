@@ -7,10 +7,25 @@
 - opencv : `pip install opencv-python`
 - mediapipe : `pip install mediapipe`
 # method used (from cv2 library)
-- `VideoCapture()`
-- `imshow()` to display an image in a window
-- `waitKey()`
-- `destroyAllwindows()`
-- `cvtColor()` to convert an image from one color space to another, in this project it's converting BGR to RGB
+## for cv2 library:
+  - `VideoCapture()`
+  - `imshow()` to display an image in a window
+  - `waitKey()`
+  - `destroyAllwindows()`
+  - `cvtColor()` to convert an image from one color space to another, in this project it's converting BGR to RGB
+  - `.circle()`
+  - `.FILLED`
+## for mediapipe library(python solution API):
+  - `.hands`
+  - `.Hands()`
+  - `.multi_hand_landmarks`
+  - `.drawing_utils`
+  - `.draw_landmarks`
+  - `.HAND_CONNECTIONS`
+  - `.shape`
+  - `.landmark`
+  
 # notes for myself
-- when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
+  - when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
+
+  - ![image](https://mediapipe.dev/images/mobile/hand_landmarks.png)
