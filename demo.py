@@ -1,3 +1,4 @@
+from turtle import width
 import cv2
 import mediapipe as mp
 
@@ -19,6 +20,23 @@ while True:
     print(results.multi_hand_landmarks)
     if (results.multi_hand_landmarks):
         for handlandmarks in results.multi_hand_landmarks:
+            for finger_id,landmark_co in enumerate(handlandmarks.landmark):
+                #print(finger_id,landmark_co)
+                height,width,channel = image.shape
+                cx,cy = int(landmark_co.x * width), int(landmark_co.y * height)
+                #print(finger_id,cx,cy)
+                #4 means thumb, 8 is index finger
+                if finger_id == 4:
+                    cv2.circle(image,(cx,cy),30,(255,0,255),cv2.FILLED)
+                if finger_id == 8:
+                    cv2.circle(image,(cx,cy),30,(255,0,255),cv2.FILLED)
+
+
+
+
+
+
+
             draw.draw_landmarks(image, handlandmarks,mp_hands.HAND_CONNECTIONS) 
     cv2.imshow('Image capture', image)
     # a if statement for "pressing esc to exit the loop"
