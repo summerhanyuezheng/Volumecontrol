@@ -36,7 +36,8 @@ Control volume by hand gesture(the distance between thumb and index finger indic
 ### for osascript library:
   - `.osascript()`
 # Video demo:
-video demo for the project (https://www.youtube.com/watch?v=Ngxl6w6XFDA)
+- video demo1 for the project (https://www.youtube.com/watch?v=Ngxl6w6XFDA)
+- video demo2 for the project (https://www.youtube.com/watch?v=ECtbkSMLmWk)
 
   
 # notes for myself
