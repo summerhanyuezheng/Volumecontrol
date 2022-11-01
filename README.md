@@ -1,6 +1,6 @@
 # Volume control by hand tracking
 # Project Description:  
-The project uses web camera to detect hands. It measures the distance between thumb and index finger to indicate the volume's high and low. Machine leanring knowledge was applied for hand detecting.
+The project uses a web camera to detect hands. It measures the distance between the thumb and index finger. The device’s volume changes accordingly based on how the distance changes.
 # Technology used:
 - Anaconda: I personally had trouble running the program on Mac terminal without using conda. but if yours running ok, then this step is not needed.
 - opencv : OpenCV-Python is a library of Python bindings designed to solve computer vision problems
