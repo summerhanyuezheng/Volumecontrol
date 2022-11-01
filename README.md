@@ -12,8 +12,8 @@ Control volume by hand gesture(the distance between thumb and index finger indic
 - mediapipe : `pip install mediapipe`
 - osascript : `pip install osascript`
 - numpy : `pip install numpy`
-# method used (from cv2 library)
-## for cv2 library:
+# Method used
+### for cv2 library:
   - `.VideoCapture()`
   - `.imshow()` to display an image in a window
   - `.waitKey()`
@@ -22,7 +22,7 @@ Control volume by hand gesture(the distance between thumb and index finger indic
   - `.circle()`
   - `.FILLED`
   - `.line()`
-## for mediapipe library(python solution API):
+### for mediapipe library(python solution API):
   - `.hands`
   - `.Hands()`
   - `.multi_hand_landmarks`
@@ -31,9 +31,9 @@ Control volume by hand gesture(the distance between thumb and index finger indic
   - `.HAND_CONNECTIONS`
   - `.shape`
   - `.landmark`
-## for numpy library:
+### for numpy library:
   - `.interp()`
-## for osascript library:
+### for osascript library:
   - `.osascript()`
   
 # notes for myself
