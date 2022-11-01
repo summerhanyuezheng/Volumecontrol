@@ -35,6 +35,9 @@ Control volume by hand gesture(the distance between thumb and index finger indic
   - `.interp()`
 ### for osascript library:
   - `.osascript()`
+# Video demo:
+video demo for the project (https://www.youtube.com/watch?v=Ngxl6w6XFDA)
+
   
 # notes for myself
   - when you need to capture something from webcam, you have to create a VideoCapture object. **Videocapture()** is a built-in method in cv2.
