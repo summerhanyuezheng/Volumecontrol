@@ -1,6 +1,7 @@
 from turtle import width
 import cv2
 import mediapipe as mp
+import math
 
 
 mp_hands = mp.solutions.hands
@@ -10,7 +11,7 @@ hands = mp_hands.Hands()
 
 #passed in 1 becoz 1 want to use my second webcam
 #variable capture has all the frames that's captured
-capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(0)
 while True:
     #variable "image" has each frame
     value,image = capture.read() #a tuple
@@ -28,8 +29,14 @@ while True:
                 #4 means thumb, 8 is index finger
                 if finger_id == 4:
                     cv2.circle(image,(cx,cy),30,(255,0,255),cv2.FILLED)
+                    thumb_pixel_x,thumb_pixel_y = cx,cy
                 if finger_id == 8:
                     cv2.circle(image,(cx,cy),30,(255,0,255),cv2.FILLED)
+                    index_pixel_x,index_pixel_y = cx,cy
+                    cv2.line(image,(thumb_pixel_x,thumb_pixel_y), (index_pixel_x,index_pixel_y),(0,255,0),9)
+                    #finding the distance
+                    distance = math.sqrt((index_pixel_x - thumb_pixel_x) ** 2 + (index_pixel_y - thumb_pixel_y) ** 2)
+                    print(distance)
 
 
 
