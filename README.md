@@ -36,8 +36,8 @@ The project uses a web camera to detect hands. It measures the distance between 
 ### for osascript library:
   - `.osascript()`
 # Video demo:
-- video demo1 for the project (https://www.youtube.com/watch?v=Ngxl6w6XFDA)
-- video demo2 for the project (https://www.youtube.com/watch?v=ECtbkSMLmWk)
+- video demo1 for the project (https://www.youtube.com/watch?v=3MSKSwdgQj0)
+- video demo2 for the project (https://www.youtube.com/watch?v=_MA4ICLP1-A)
 
   
 # notes for myself
