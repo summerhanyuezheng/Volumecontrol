@@ -1,12 +1,12 @@
 # Volume control by hand tracking
 # Project Description:  
-The project uses a web camera to detect hands. It measures the distance between the thumb and index finger. The device’s volume changes accordingly based on how the distance changes.
+The project engages machine leanring technology utlizing a web camera for detecting hand gestures and It measures the distance between the thumb and index finger. The device’s volume changes accordingly based on how the distance changes.
 # Technology used:
-- Anaconda: I personally had trouble running the program on Mac terminal without using conda. but if yours running ok, then this step is not needed.
-- opencv : OpenCV-Python is a library of Python bindings designed to solve computer vision problems
-- MediaPipe : a machine learning solution library
-- Osascript
-- numpy : in this particular project, the library used to map the distance between two fingers to the volume
+- `Anaconda`: I personally had trouble running the program on Mac terminal without using conda. but if yours running ok, then this step is not needed.
+- `opencv` : OpenCV-Python is a library of Python bindings designed to solve computer vision problems
+- `MediaPipe` : a machine learning solution library
+- `Osascript`
+- `numpy` : in this particular project, the library used to map the distance between two fingers to the volume
 # Installation Instruction (For Mac)
 - opencv : `pip install opencv-python`
 - mediapipe : `pip install mediapipe`
