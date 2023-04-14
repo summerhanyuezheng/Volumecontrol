@@ -1,4 +1,8 @@
 # Volume control by hand tracking
+
+# Video demo:
+- video demo1 for the project (https://www.youtube.com/watch?v=3MSKSwdgQj0)
+- video demo2 for the project (https://www.youtube.com/watch?v=_MA4ICLP1-A)
 # Project Description:  
 The project engages machine leanring technology utlizing a web camera for detecting hand gestures and It measures the distance between the thumb and index finger. The device’s volume changes accordingly based on how the distance changes.
 # Technology used:
@@ -35,9 +39,7 @@ The project engages machine leanring technology utlizing a web camera for detect
   - `.interp()`
 ### for osascript library:
   - `.osascript()`
-# Video demo:
-- video demo1 for the project (https://www.youtube.com/watch?v=3MSKSwdgQj0)
-- video demo2 for the project (https://www.youtube.com/watch?v=_MA4ICLP1-A)
+
 
   
 # notes for myself
